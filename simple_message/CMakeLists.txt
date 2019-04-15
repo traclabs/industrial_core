@@ -4,6 +4,10 @@ project(simple_message)
 
 find_package(catkin REQUIRED COMPONENTS roscpp industrial_msgs)
 
+
+add_definitions(-Wno-error)
+
+
 # Build static libs, to reduce dependency-chaining for industrial_robot_client
 set(ROS_BUILD_STATIC_LIBS true)
 set(ROS_BUILD_SHARED_LIBS false)
